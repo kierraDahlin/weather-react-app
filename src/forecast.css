@@ -1,0 +1,27 @@
+.Forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Forecast .forecast-item {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 0 5px 40px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 19%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Forecast .forecast-item img {
+  width: 50px;
+}

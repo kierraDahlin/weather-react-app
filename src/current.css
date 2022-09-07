@@ -1,0 +1,36 @@
+.Current {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.Current i {
+  font-size: 60px;
+  color: #cca8e9;
+  margin-bottom: 20px;
+}
+
+.Current .current-weather-display {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 8px 32px 0 rgb(31 38 135 / 19%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Current .current-weather-display h2 {
+  font-size: 42px;
+}
