@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./search.css";
 import "./current.css";
+import FormatedDate from "./FormatedDate";
 
 export default function Search(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,7 +13,7 @@ export default function Search(props) {
       temp: response.data.main.temp,
       humidity: response.data.main.humidity,
       description: response.data.weather[0].description,
-      date: "Wed 12:34",
+      date: new Date(response.data.dt * 1000),
       iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
       wind: response.data.wind.speed,
       city: response.data.name,
@@ -42,7 +43,10 @@ export default function Search(props) {
             <h1>{weatherData.city}</h1>
             <h2>{weatherData.description}</h2>
             <h3>
-              Last updated: <span>{weatherData.date}</span>
+              Last updated:{" "}
+              <span>
+                <FormatedDate date={weatherData.date} />
+              </span>
             </h3>
             <ul>
               <li>

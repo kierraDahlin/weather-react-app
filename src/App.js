@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="weather-container">
-      <Search defaultCity="New York" />
+      <Search defaultCity="Westlock" />
 
       <a
         href="https://github.com/kierraDahlin/weather-react-app"
