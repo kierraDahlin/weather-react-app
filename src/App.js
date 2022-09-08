@@ -1,12 +1,12 @@
 import React from "react";
-import Search from "./Search";
+import Weather from "./Weather";
 
 import "./App.css";
 
 function App() {
   return (
     <div className="weather-container">
-      <Search defaultCity="Westlock" />
+      <Weather defaultCity="Westlock" />
 
       <a
         href="https://github.com/kierraDahlin/weather-react-app"

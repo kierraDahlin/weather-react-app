@@ -1,0 +1,41 @@
+import React from "react";
+import FormatedDate from "./FormatedDate";
+import "./current.css";
+
+export default function WeatherInfo(props) {
+  return (
+    <div className="Current">
+      <div className="current-weather-info">
+        <h1>{props.data.city}</h1>
+        <h2>{props.data.description}</h2>
+        <h3>
+          Last updated:{" "}
+          <span>
+            <FormatedDate date={props.data.date} />
+          </span>
+        </h3>
+        <ul>
+          <li>
+            Wind: <span>{props.data.wind}</span>km/h
+          </li>
+          <li>
+            Humidity: <span>{props.data.humidity}</span>%
+          </li>
+          <li>
+            Low: <span>{Math.round(props.data.low)}</span>°C
+          </li>
+          <li>
+            High: <span>{Math.round(props.data.high)}</span>°C
+          </li>
+        </ul>
+      </div>
+
+      <div className="current-weather-display">
+        <img src={props.data.iconUrl} alt={props.data.description}></img>
+        <h2>
+          <span>{Math.round(props.data.temp)}</span>°<span>C</span>
+        </h2>
+      </div>
+    </div>
+  );
+}
