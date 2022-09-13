@@ -11,6 +11,7 @@ function App() {
       <a
         href="https://github.com/kierraDahlin/weather-react-app"
         className="author-note"
+        rel="noopener noreferrer"
       >
         Open-source code by Kierra Dahlin
       </a>
