@@ -1,13 +1,18 @@
 .Current {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
 }
 
 .Current canvas {
   margin-bottom: 20px;
+}
+
+.current-weather-info {
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .Current .current-weather-display {
@@ -31,4 +36,10 @@
 
 .Current .current-weather-display h2 {
   font-size: 42px;
+}
+
+@media all and (min-width: 600px) {
+  .Current {
+    justify-content: space-between;
+  }
 }

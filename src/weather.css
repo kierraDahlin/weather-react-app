@@ -1,11 +1,12 @@
 .Search {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
 }
 .Search .search-form {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .Search .search-input {
@@ -16,4 +17,10 @@
 .Search .search-btn {
   border-radius: 0 30px 30px 0;
   margin-right: 20px;
+}
+
+@media all and (min-width: 600px) {
+  .Search {
+    justify-content: space-between;
+  }
 }
